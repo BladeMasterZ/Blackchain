@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://xianz2.cmu.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://xianz2.cmu.edu/">
+
+<xs:element name="addBolck" type="tns:addBolck"/>
+
+<xs:element name="addBolckResponse" type="tns:addBolckResponse"/>
+
+<xs:element name="isValidate" type="tns:isValidate"/>
+
+<xs:element name="isValidateResponse" type="tns:isValidateResponse"/>
+
+<xs:element name="operationer" type="tns:operationer"/>
+
+<xs:element name="operationerResponse" type="tns:operationerResponse"/>
+
+<xs:element name="splitString" type="tns:splitString"/>
+
+<xs:element name="splitStringResponse" type="tns:splitStringResponse"/>
+
+<xs:element name="strToBig" type="tns:strToBig"/>
+
+<xs:element name="strToBigResponse" type="tns:strToBigResponse"/>
+
+<xs:element name="verify" type="tns:verify"/>
+
+<xs:element name="verifyResponse" type="tns:verifyResponse"/>
+
+<xs:element name="viewChain" type="tns:viewChain"/>
+
+<xs:element name="viewChainResponse" type="tns:viewChainResponse"/>
+
+<xs:complexType name="isValidate">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="isValidateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="viewChain">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="viewChainResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="strToBig">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="strToBigResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:integer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verify">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="splitString">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="splitStringResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operationer">
+<xs:sequence>
+<xs:element name="xmlMsg" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operationerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBolck">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addBolckResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
